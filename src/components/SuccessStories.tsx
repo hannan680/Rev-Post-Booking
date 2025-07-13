@@ -20,62 +20,62 @@ interface SuccessStory {
 
 const successStories: SuccessStory[] = [
   {
-    id: "hvac-pro",
-    clientName: "Mike Rodriguez",
-    company: "Elite HVAC Pro",
-    industry: "HVAC Services",
-    keyMetric: "Lead Response Time",
-    metricValue: "< 2 minutes",
-    description: "Transformed emergency HVAC response with AI that qualifies leads instantly and books appointments 24/7.",
+    id: "merchant-financial",
+    clientName: "Jack",
+    company: "Merchant Financial",
+    industry: "Business Lending",
+    keyMetric: "Daily Contact Volume",
+    metricValue: "20,000",
+    description: "Transformed ethical lending operations with AI that scales integrity while outperforming promise-heavy brokers.",
     results: {
-      leadIncrease: "185%",
-      timesSaved: "25 hours/week",
-      revenueImpact: "$47K/month"
-    },
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: "realty-group",
-    clientName: "Sarah Chen",
-    company: "Premium Realty Group", 
-    industry: "Real Estate",
-    keyMetric: "Qualified Leads",
-    metricValue: "+340%",
-    description: "AI handles initial buyer qualification, scheduling, and follow-ups, allowing agents to focus on closings.",
-    results: {
-      leadIncrease: "340%",
+      leadIncrease: "300%",
       timesSaved: "40 hours/week",
-      revenueImpact: "$125K/month"
+      revenueImpact: "Predictable math"
     },
     image: "/api/placeholder/400/300"
   },
   {
-    id: "fitness-first",
-    clientName: "David Kumar",
-    company: "FitnesFirst Studios",
-    industry: "Fitness & Wellness",
-    keyMetric: "Member Retention",
-    metricValue: "94%",
-    description: "AI-powered member engagement and class booking system increased retention and automated operations.",
+    id: "c4kr-real-estate",
+    clientName: "Jason Bennett",
+    company: "C4KR Real Estate",
+    industry: "Real Estate Investment",
+    keyMetric: "Close Rate",
+    metricValue: "67%",
+    description: "Converted mathematical mind from manual processes to AI-powered real estate machine with systematic deal flow.",
     results: {
-      leadIncrease: "220%",
-      timesSaved: "30 hours/week",
-      revenueImpact: "$38K/month"
+      leadIncrease: "347%",
+      timesSaved: "42 hours/week",
+      revenueImpact: "$15K+ per deal"
     },
     image: "/api/placeholder/400/300"
   },
   {
-    id: "legal-associates",
-    clientName: "Jennifer Walsh",
-    company: "Walsh Legal Associates",
-    industry: "Legal Services", 
-    keyMetric: "Client Intake",
-    metricValue: "100% automated",
-    description: "Streamlined client intake process with AI that pre-qualifies cases and schedules consultations.",
+    id: "radiant-security",
+    clientName: "Chris",
+    company: "Radiant Security",
+    industry: "Home Security Systems",
+    keyMetric: "Cost Reduction",
+    metricValue: "80%",
+    description: "Dual AI agents handle complex security sales and support, eliminating expensive overhead while growing revenue.",
     results: {
-      leadIncrease: "160%",
-      timesSaved: "35 hours/week",
-      revenueImpact: "$82K/month"
+      leadIncrease: "40%",
+      timesSaved: "Sleep recovery",
+      revenueImpact: "$23K/month impact"
+    },
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: "bana-roofing",
+    clientName: "Don",
+    company: "BANA Roofing & Solar",
+    industry: "Roofing & Solar",
+    keyMetric: "Response Time",
+    metricValue: "Seconds",
+    description: "Omnichannel AI command center transforms 7-figure success trap into 8-figure scaling machine.",
+    results: {
+      leadIncrease: "500%",
+      timesSaved: "60 hours/week",
+      revenueImpact: "8-figure scaling"
     },
     image: "/api/placeholder/400/300"
   }
