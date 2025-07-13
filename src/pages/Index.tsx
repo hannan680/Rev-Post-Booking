@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import BreakoutVideos from "../components/BreakoutVideos";
-import BuildProcess from "../components/BuildProcess";
+import ProcessOverview from "../components/ProcessOverview";
 import SuccessStories from "../components/SuccessStories";
 import AudioDemos from "../components/AudioDemos";
 import FAQ from "../components/FAQ";
@@ -12,7 +12,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <BreakoutVideos />
-      <BuildProcess />
+      <ProcessOverview />
       <SuccessStories />
       <AudioDemos />
       <FAQ />

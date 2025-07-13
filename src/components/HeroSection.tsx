@@ -29,22 +29,32 @@ const HeroSection = () => {
   return (
     <section className="pt-20 bg-gradient-hero retro-grid">
       <div className="container mx-auto px-6 py-16">
-        <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-audiowide font-bold text-foreground mb-6 leading-tight tracking-wider">
-            Behind the Scenes:<br />
-            <span className="text-neon-aqua">
-              How We Build Your Custom 
+        <div className="text-center mb-16 animate-fade-in">
+          <div className="mb-6">
+            <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+              RevSquared AI Development Process
             </span>
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
+            Custom AI Employee
             <br />
-            <span className="text-neon-magenta font-pacifico text-5xl md:text-7xl">
-              AI Employee
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Development Journey
             </span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-manrope">
-            Complete due diligence materials for businesses investing 
-            <span className="text-neon-yellow font-semibold"> $5K-7.5K </span>
-            in custom AI automation
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+            Complete transparency into our proven methodology for businesses investing 
+            <span className="text-primary font-semibold bg-primary/10 px-2 py-1 rounded"> $5K-7.5K </span>
+            in custom AI automation solutions
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground">
+              Watch Development Process
+            </Button>
+            <Button variant="outline" size="lg">
+              Download Case Studies
+            </Button>
+          </div>
         </div>
 
         {/* Main Video Player */}
@@ -111,29 +121,29 @@ const HeroSection = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
-          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow hover-glow-aqua transition-all duration-300">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
-              <span className="text-2xl font-audiowide font-bold text-background">100%</span>
-            </div>
-            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Client Retention</h3>
-            <p className="text-muted-foreground text-sm font-manrope">Every client stays with us</p>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto animate-fade-in">
+          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 text-center hover:bg-card/70 transition-all duration-300">
+            <div className="text-3xl font-bold text-primary mb-2">100%</div>
+            <div className="text-foreground font-medium mb-1">Client Retention</div>
+            <div className="text-muted-foreground text-sm">Every client stays with us</div>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow-magenta hover-glow-magenta transition-all duration-300">
-            <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
-              <span className="text-2xl font-audiowide font-bold text-background">$2M+</span>
-            </div>
-            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Revenue Generated</h3>
-            <p className="text-muted-foreground text-sm font-manrope">For our clients combined</p>
+          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 text-center hover:bg-card/70 transition-all duration-300">
+            <div className="text-3xl font-bold text-accent mb-2">$2M+</div>
+            <div className="text-foreground font-medium mb-1">Revenue Generated</div>
+            <div className="text-muted-foreground text-sm">For clients combined</div>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow-yellow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
-            <div className="w-16 h-16 bg-gradient-to-br from-warning to-warning/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
-              <span className="text-2xl font-audiowide font-bold text-background">50+</span>
-            </div>
-            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Businesses Automated</h3>
-            <p className="text-muted-foreground text-sm font-manrope">Across diverse industries</p>
+          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 text-center hover:bg-card/70 transition-all duration-300">
+            <div className="text-3xl font-bold text-primary mb-2">50+</div>
+            <div className="text-foreground font-medium mb-1">Businesses Automated</div>
+            <div className="text-muted-foreground text-sm">Across diverse industries</div>
+          </div>
+
+          <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 text-center hover:bg-card/70 transition-all duration-300">
+            <div className="text-3xl font-bold text-accent mb-2">30 Days</div>
+            <div className="text-foreground font-medium mb-1">Average Delivery</div>
+            <div className="text-muted-foreground text-sm">From start to deployment</div>
           </div>
         </div>
       </div>
