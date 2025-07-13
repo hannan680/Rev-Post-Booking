@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* RevSquared AI Brand Colors - Dark Blue/Purple Theme */
-    --background: 240 35% 7%; /* Dark Blue-Purple Background */
+    /* RevSquared AI Brand Colors - Vibrant Blue/Purple Theme */
+    --background: 240 60% 15%; /* Rich Dark Blue */
     --foreground: 0 0% 98%; /* Bright White #FAFAFA */
 
-    --card: 240 30% 9%; /* Slightly lighter blue for cards */
+    --card: 240 50% 18%; /* Lighter blue for cards */
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 30% 9%;
+    --popover: 240 50% 18%;
     --popover-foreground: 0 0% 96%;
 
     /* Primary: Neon Aqua */
@@ -52,7 +52,7 @@ All colors MUST be HSL.
     /* Retro-Futuristic Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(176 100% 45%), hsl(255 81% 55%));
     --gradient-hero: linear-gradient(135deg, hsl(176 100% 45% / 0.1), hsl(316 77% 55% / 0.05));
-    --gradient-card: linear-gradient(180deg, hsl(240 30% 9%), hsl(240 25% 12%));
+    --gradient-card: linear-gradient(180deg, hsl(240 50% 18%), hsl(240 45% 22%));
     --gradient-neon: linear-gradient(90deg, hsl(176 100% 45%), hsl(316 77% 55%), hsl(48 98% 64%));
     --gradient-retro: linear-gradient(45deg, hsl(316 77% 55%), hsl(255 81% 55%), hsl(239 77% 33%));
 
