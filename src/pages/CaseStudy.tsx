@@ -295,7 +295,7 @@ const CaseStudy = () => {
                 </span>
                 <span className="text-muted-foreground">{caseStudy.location}</span>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold text-super-bright mb-4">
                 {caseStudy.company}
               </h1>
               <p className="text-xl text-muted-foreground mb-6">

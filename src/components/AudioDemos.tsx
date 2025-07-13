@@ -145,7 +145,7 @@ const AudioDemos = () => {
     <section id="demos" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
             Hear Your AI In Action
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -162,7 +162,7 @@ const AudioDemos = () => {
             return (
               <div 
                 key={demo.id}
-                className="bg-card rounded-xl shadow-card border border-border/50 p-6 hover:shadow-elegant transition-all duration-300 animate-fade-in"
+                className="bg-gradient-card card-glow rounded-xl p-6 hover:shadow-elegant transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Header */}
@@ -174,7 +174,7 @@ const AudioDemos = () => {
                       </span>
                       <span className="text-muted-foreground text-sm">{demo.duration}</span>
                     </div>
-                    <h3 className="font-semibold text-foreground mb-2">{demo.title}</h3>
+                    <h3 className="font-semibold text-super-bright mb-2">{demo.title}</h3>
                   </div>
                 </div>
 

@@ -10,10 +10,10 @@ All colors MUST be HSL.
   :root {
     /* RevSquared AI Brand Colors - Retro-Futuristic Palette */
     --background: 220 22% 5%; /* Charcoal Black #0D0D0D */
-    --foreground: 0 0% 96%; /* Bright White #F5F5F5 */
+    --foreground: 0 0% 98%; /* Bright White #FAFAFA */
 
     --card: 220 22% 8%;
-    --card-foreground: 0 0% 96%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 220 22% 8%;
     --popover-foreground: 0 0% 96%;
@@ -32,7 +32,7 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 96%;
 
     --muted: 240 48% 85%; /* Soft Lavender #D3D4FF */
-    --muted-foreground: 220 22% 45%;
+    --muted-foreground: 0 0% 85%; /* Much brighter muted text */
 
     /* Cyber Yellow for highlights */
     --warning: 48 98% 64%; /* #FEDD4D */
@@ -45,8 +45,8 @@ All colors MUST be HSL.
     --success: 176 100% 45%; /* Using Neon Aqua */
     --success-foreground: 220 22% 5%;
 
-    --border: 240 48% 20%;
-    --input: 240 48% 15%;
+    --border: 240 48% 30%; /* Brighter borders */
+    --input: 240 48% 25%; /* Brighter input backgrounds */
     --ring: 176 100% 45%;
 
     /* Retro-Futuristic Gradients */
@@ -123,6 +123,32 @@ All colors MUST be HSL.
   .hover-glow-magenta:hover {
     box-shadow: var(--shadow-neon-magenta);
     transition: var(--transition-neon);
+  }
+
+  /* Enhanced Card Styles */
+  .card-glow {
+    border: 2px solid hsl(var(--primary) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.1), inset 0 1px 0 hsl(var(--primary) / 0.1);
+  }
+  
+  .card-glow-magenta {
+    border: 2px solid hsl(var(--accent) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.1), inset 0 1px 0 hsl(var(--accent) / 0.1);
+  }
+  
+  .card-glow-yellow {
+    border: 2px solid hsl(var(--warning) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--warning) / 0.1), inset 0 1px 0 hsl(var(--warning) / 0.1);
+  }
+
+  /* Text Brightness Classes */
+  .text-bright {
+    color: hsl(0 0% 98%);
+  }
+  
+  .text-super-bright {
+    color: hsl(0 0% 100%);
+    text-shadow: 0 0 5px hsl(0 0% 100% / 0.3);
   }
 
   /* Retro Grid Background */

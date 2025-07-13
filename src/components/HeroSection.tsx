@@ -112,27 +112,27 @@ const HeroSection = () => {
 
         {/* Trust Indicators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
-          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-primary/30 hover-glow-aqua transition-all duration-300">
+          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow hover-glow-aqua transition-all duration-300">
             <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
               <span className="text-2xl font-audiowide font-bold text-background">100%</span>
             </div>
-            <h3 className="font-audiowide font-semibold text-primary mb-2 tracking-wide">Client Retention</h3>
+            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Client Retention</h3>
             <p className="text-muted-foreground text-sm font-manrope">Every client stays with us</p>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-accent/30 hover-glow-magenta transition-all duration-300">
+          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow-magenta hover-glow-magenta transition-all duration-300">
             <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
               <span className="text-2xl font-audiowide font-bold text-background">$2M+</span>
             </div>
-            <h3 className="font-audiowide font-semibold text-accent mb-2 tracking-wide">Revenue Generated</h3>
+            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Revenue Generated</h3>
             <p className="text-muted-foreground text-sm font-manrope">For our clients combined</p>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-warning/30 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
+          <div className="text-center p-6 rounded-xl bg-gradient-card card-glow-yellow transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
             <div className="w-16 h-16 bg-gradient-to-br from-warning to-warning/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
               <span className="text-2xl font-audiowide font-bold text-background">50+</span>
             </div>
-            <h3 className="font-audiowide font-semibold text-warning mb-2 tracking-wide">Businesses Automated</h3>
+            <h3 className="font-audiowide font-semibold text-bright mb-2 tracking-wide">Businesses Automated</h3>
             <p className="text-muted-foreground text-sm font-manrope">Across diverse industries</p>
           </div>
         </div>

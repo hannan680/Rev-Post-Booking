@@ -80,7 +80,7 @@ const BreakoutVideos = () => {
     <section id="videos" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
             Explore Our Process
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -96,11 +96,11 @@ const BreakoutVideos = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => toggleVideo(video.id)}
             >
-              <div className="bg-card rounded-xl overflow-hidden shadow-card border border-border/50 hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <div className="bg-gradient-card card-glow rounded-xl overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105">
                 {/* Video Thumbnail */}
                 <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-primary/90 hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                    <div className="w-16 h-16 bg-primary/90 hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-[0_0_20px_hsl(var(--primary)/0.4)]">
                       {playingStates[video.id] ? (
                         <Pause className="w-6 h-6 text-white" />
                       ) : (
@@ -125,7 +125,7 @@ const BreakoutVideos = () => {
 
                 {/* Video Info */}
                 <div className="p-6">
-                  <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-super-bright mb-2 group-hover:text-primary transition-colors">
                     {video.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">

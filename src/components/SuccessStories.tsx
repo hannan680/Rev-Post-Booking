@@ -86,7 +86,7 @@ const SuccessStories = () => {
     <section id="success-stories" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
             Proven Results from Real Clients
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -98,14 +98,14 @@ const SuccessStories = () => {
           {successStories.map((story, index) => (
             <div 
               key={story.id}
-              className="group bg-card rounded-xl shadow-card border border-border/50 overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in"
+              className="group bg-gradient-card card-glow overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in rounded-xl"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Card Header */}
               <div className="p-6 border-b border-border/50">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-semibold text-super-bright group-hover:text-primary transition-colors">
                       {story.clientName}
                     </h3>
                     <p className="text-muted-foreground">{story.company}</p>

@@ -97,7 +97,7 @@ const BuildProcess = () => {
     <section id="process" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
             Our 30-Day Build Process
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -133,7 +133,7 @@ const BuildProcess = () => {
                         <Icon className="w-6 h-6" />
                       </div>
                       <div className="text-center mt-4">
-                        <h3 className="font-semibold text-foreground mb-2">Week {week.number}</h3>
+                        <h3 className="font-semibold text-super-bright mb-2">Week {week.number}</h3>
                         <h4 className="text-lg font-medium text-primary mb-2">{week.title}</h4>
                         <p className="text-sm text-muted-foreground">{week.summary}</p>
                       </div>
@@ -142,8 +142,8 @@ const BuildProcess = () => {
                     {/* Expanded Details */}
                     {isExpanded && (
                       <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 w-80 z-10">
-                        <div className="bg-card rounded-xl shadow-elegant border border-border/50 p-6 animate-fade-in">
-                          <h5 className="font-semibold text-foreground mb-4">Detailed Activities:</h5>
+                        <div className="bg-gradient-card card-glow rounded-xl p-6 animate-fade-in">
+                          <h5 className="font-semibold text-super-bright mb-4">Detailed Activities:</h5>
                           <ul className="space-y-2 mb-4">
                             {week.details.map((detail, idx) => (
                               <li key={idx} className="text-sm text-muted-foreground flex items-start">

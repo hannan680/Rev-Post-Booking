@@ -106,7 +106,7 @@ const FAQ = () => {
     <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
             Common Questions Answered
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ const FAQ = () => {
                 placeholder="Search questions..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 bg-gradient-card border-2 border-primary/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary card-glow"
               />
             </div>
 
@@ -153,12 +153,12 @@ const FAQ = () => {
               return (
                 <div 
                   key={item.id}
-                  className="bg-card rounded-lg shadow-card border border-border/50 overflow-hidden animate-fade-in"
+                  className="bg-gradient-card card-glow rounded-lg overflow-hidden animate-fade-in"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <button
                     onClick={() => toggleItem(item.id)}
-                    className="w-full p-6 text-left hover:bg-muted/50 transition-colors"
+                    className="w-full p-6 text-left hover:bg-muted/10 transition-colors"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
@@ -172,7 +172,7 @@ const FAQ = () => {
                             {item.category}
                           </span>
                         </div>
-                        <h3 className="text-lg font-semibold text-foreground pr-8">
+                        <h3 className="text-lg font-semibold text-super-bright pr-8">
                           {item.question}
                         </h3>
                       </div>
@@ -207,8 +207,8 @@ const FAQ = () => {
           )}
 
           {/* Still Have Questions CTA */}
-          <div className="text-center mt-16 p-8 bg-gradient-card rounded-xl border border-border/50">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+          <div className="text-center mt-16 p-8 bg-gradient-card card-glow rounded-xl">
+            <h3 className="text-2xl font-semibold text-super-bright mb-4">
               Still Have Questions?
             </h3>
             <p className="text-muted-foreground mb-6">
