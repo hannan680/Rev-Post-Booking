@@ -141,8 +141,8 @@ const BuildProcess = () => {
 
                     {/* Expanded Details */}
                     {isExpanded && (
-                      <div className="absolute top-full mt-4 left-1/2 transform -translate-x-1/2 w-80 z-10">
-                        <div className="bg-gradient-card card-glow rounded-xl p-6 animate-fade-in">
+                      <div className="mt-8 w-full">
+                        <div className="bg-gradient-card card-glow rounded-xl p-6 animate-fade-in max-w-lg mx-auto">
                           <h5 className="font-semibold text-super-bright mb-4">Detailed Activities:</h5>
                           <ul className="space-y-2 mb-4">
                             {week.details.map((detail, idx) => (
@@ -153,7 +153,7 @@ const BuildProcess = () => {
                             ))}
                           </ul>
                           
-                          <h5 className="font-semibold text-foreground mb-2">Deliverables:</h5>
+                          <h5 className="font-semibold text-super-bright mb-2">Deliverables:</h5>
                           <ul className="space-y-1">
                             {week.deliverables.map((deliverable, idx) => (
                               <li key={idx} className="text-sm text-success flex items-center">
