@@ -8,50 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 213 27% 15%;
+    /* RevSquared AI Brand Colors - Retro-Futuristic Palette */
+    --background: 220 22% 5%; /* Charcoal Black #0D0D0D */
+    --foreground: 0 0% 96%; /* Bright White #F5F5F5 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 213 27% 15%;
+    --card: 220 22% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 213 27% 15%;
+    --popover: 220 22% 8%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    /* Primary: Neon Aqua */
+    --primary: 176 100% 45%; /* #00E5D6 */
+    --primary-foreground: 220 22% 5%;
+    --primary-glow: 176 100% 55%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 213 27% 15%;
+    /* Accent: Hot Magenta */
+    --accent: 316 77% 55%; /* #E536C1 */
+    --accent-foreground: 0 0% 96%;
 
-    --muted: 214 32% 91%;
-    --muted-foreground: 215 16% 47%;
+    /* Secondary: Purple Grape */
+    --secondary: 255 81% 55%; /* #6233EA */
+    --secondary-foreground: 0 0% 96%;
 
-    --accent: 221 83% 53%;
-    --accent-foreground: 0 0% 100%;
+    --muted: 240 48% 85%; /* Soft Lavender #D3D4FF */
+    --muted-foreground: 220 22% 45%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    /* Cyber Yellow for highlights */
+    --warning: 48 98% 64%; /* #FEDD4D */
+    --warning-foreground: 220 22% 5%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    /* Deep Violet for shadows */
+    --destructive: 239 77% 33%; /* #20215A */
+    --destructive-foreground: 0 0% 96%;
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    --success: 176 100% 45%; /* Using Neon Aqua */
+    --success-foreground: 220 22% 5%;
 
-    --warning: 48 96% 53%;
-    --warning-foreground: 213 27% 15%;
+    --border: 240 48% 20%;
+    --input: 240 48% 15%;
+    --ring: 176 100% 45%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--accent) / 0.05));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--secondary) / 0.3));
+    /* Retro-Futuristic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(176 100% 45%), hsl(255 81% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(176 100% 45% / 0.1), hsl(316 77% 55% / 0.05));
+    --gradient-card: linear-gradient(180deg, hsl(220 22% 8%), hsl(240 48% 12%));
+    --gradient-neon: linear-gradient(90deg, hsl(176 100% 45%), hsl(316 77% 55%), hsl(48 98% 64%));
+    --gradient-retro: linear-gradient(45deg, hsl(316 77% 55%), hsl(255 81% 55%), hsl(239 77% 33%));
 
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    /* Neon Glow Effects */
+    --shadow-neon-aqua: 0 0 20px hsl(176 100% 45% / 0.5), 0 0 40px hsl(176 100% 45% / 0.3);
+    --shadow-neon-magenta: 0 0 20px hsl(316 77% 55% / 0.5), 0 0 40px hsl(316 77% 55% / 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsl(176 100% 45% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(316 77% 55% / 0.1);
+    --shadow-glow: 0 0 40px hsl(176 100% 45% / 0.3);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-neon: all 0.3s ease-in-out;
 
     --radius: 0.75rem;
 
@@ -70,6 +83,54 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* RevSquared AI Typography System */
+  .font-audiowide {
+    font-family: 'Audiowide', monospace;
+  }
+  
+  .font-manrope {
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .font-pacifico {
+    font-family: 'Pacifico', cursive;
+  }
+
+  /* Neon Text Effects */
+  .text-neon-aqua {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+  
+  .text-neon-magenta {
+    color: hsl(var(--accent));
+    text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  }
+  
+  .text-neon-yellow {
+    color: hsl(var(--warning));
+    text-shadow: 0 0 10px hsl(var(--warning) / 0.5);
+  }
+
+  /* Hover Glow Effects */
+  .hover-glow-aqua:hover {
+    box-shadow: var(--shadow-neon-aqua);
+    transition: var(--transition-neon);
+  }
+  
+  .hover-glow-magenta:hover {
+    box-shadow: var(--shadow-neon-magenta);
+    transition: var(--transition-neon);
+  }
+
+  /* Retro Grid Background */
+  .retro-grid {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 
   .dark {

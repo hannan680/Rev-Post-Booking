@@ -27,44 +27,50 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-20 bg-gradient-hero">
+    <section className="pt-20 bg-gradient-hero retro-grid">
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-audiowide font-bold text-foreground mb-6 leading-tight tracking-wider">
             Behind the Scenes:<br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              How We Build Your Custom AI Employee
+            <span className="text-neon-aqua">
+              How We Build Your Custom 
+            </span>
+            <br />
+            <span className="text-neon-magenta font-pacifico text-5xl md:text-7xl">
+              AI Employee
             </span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Complete due diligence materials for businesses investing $5K-7.5K in custom AI automation
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-manrope">
+            Complete due diligence materials for businesses investing 
+            <span className="text-neon-yellow font-semibold"> $5K-7.5K </span>
+            in custom AI automation
           </p>
         </div>
 
         {/* Main Video Player */}
         <div className="max-w-4xl mx-auto mb-12 animate-slide-in-right">
-          <div className="relative rounded-2xl overflow-hidden shadow-elegant bg-card">
+          <div className="relative rounded-2xl overflow-hidden shadow-card bg-card border-2 border-primary/30 hover-glow-aqua">
             <div 
               className="relative aspect-video bg-cover bg-center"
               style={{ backgroundImage: `url(${heroImage})` }}
             >
               {/* Video Placeholder with Controls */}
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-primary/10 flex items-center justify-center">
                 <div className="text-center">
                   <button
                     onClick={togglePlay}
-                    className="w-20 h-20 bg-primary/90 hover:bg-primary rounded-full flex items-center justify-center mb-4 mx-auto transition-all duration-300 hover:scale-110"
+                    className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-4 mx-auto transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] border-2 border-white/20"
                   >
                     {isPlaying ? (
-                      <Pause className="w-8 h-8 text-white" />
+                      <Pause className="w-8 h-8 text-background" />
                     ) : (
-                      <Play className="w-8 h-8 text-white ml-1" />
+                      <Play className="w-8 h-8 text-background ml-1" />
                     )}
                   </button>
-                  <p className="text-white text-lg font-semibold">
+                  <p className="text-white text-lg font-audiowide font-semibold tracking-wide drop-shadow-lg">
                     Watch Our Complete AI Development Process
                   </p>
-                  <p className="text-white/80">12:45 duration</p>
+                  <p className="text-warning font-semibold drop-shadow-lg">12:45 duration</p>
                 </div>
               </div>
 
@@ -106,28 +112,28 @@ const HeroSection = () => {
 
         {/* Trust Indicators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
-          <div className="text-center p-6 rounded-xl bg-card shadow-card border border-border/50">
-            <div className="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-success">100%</span>
+          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-primary/30 hover-glow-aqua transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
+              <span className="text-2xl font-audiowide font-bold text-background">100%</span>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Client Retention</h3>
-            <p className="text-muted-foreground text-sm">Every client stays with us</p>
+            <h3 className="font-audiowide font-semibold text-primary mb-2 tracking-wide">Client Retention</h3>
+            <p className="text-muted-foreground text-sm font-manrope">Every client stays with us</p>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-card shadow-card border border-border/50">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-primary">$2M+</span>
+          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-accent/30 hover-glow-magenta transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
+              <span className="text-2xl font-audiowide font-bold text-background">$2M+</span>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Revenue Generated</h3>
-            <p className="text-muted-foreground text-sm">For our clients combined</p>
+            <h3 className="font-audiowide font-semibold text-accent mb-2 tracking-wide">Revenue Generated</h3>
+            <p className="text-muted-foreground text-sm font-manrope">For our clients combined</p>
           </div>
 
-          <div className="text-center p-6 rounded-xl bg-card shadow-card border border-border/50">
-            <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-accent">50+</span>
+          <div className="text-center p-6 rounded-xl bg-gradient-card shadow-card border-2 border-warning/30 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
+            <div className="w-16 h-16 bg-gradient-to-br from-warning to-warning/30 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_hsl(var(--warning)/0.3)]">
+              <span className="text-2xl font-audiowide font-bold text-background">50+</span>
             </div>
-            <h3 className="font-semibold text-foreground mb-2">Businesses Automated</h3>
-            <p className="text-muted-foreground text-sm">Across diverse industries</p>
+            <h3 className="font-audiowide font-semibold text-warning mb-2 tracking-wide">Businesses Automated</h3>
+            <p className="text-muted-foreground text-sm font-manrope">Across diverse industries</p>
           </div>
         </div>
       </div>

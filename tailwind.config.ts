@@ -18,6 +18,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				audiowide: ['Audiowide', 'monospace'],
+				manrope: ['Manrope', 'sans-serif'],
+				pacifico: ['Pacifico', 'cursive'],
+				sans: ['Manrope', 'sans-serif'], // Set Manrope as default sans
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

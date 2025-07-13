@@ -165,7 +165,7 @@ const SuccessStories = () => {
         </div>
 
         <div className="text-center mt-16">
-          <Button variant="hero" size="xl">
+          <Button variant="gradient" size="xl">
             See All Success Stories
           </Button>
         </div>
