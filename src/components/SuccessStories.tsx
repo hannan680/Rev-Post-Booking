@@ -149,25 +149,9 @@ const SuccessStories = () => {
                   </div>
                 </div>
 
-                {/* CTA Button */}
-                <Link to={`/case-study/${story.id}`}>
-                  <Button 
-                    variant="outline" 
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                  >
-                    Read Full Case Study
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-16">
-          <Button variant="gradient" size="xl">
-            See All Success Stories
-          </Button>
         </div>
       </div>
     </section>

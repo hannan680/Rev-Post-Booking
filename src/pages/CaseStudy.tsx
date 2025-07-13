@@ -442,21 +442,6 @@ const CaseStudy = () => {
               </div>
             </div>
           </section>
-
-          {/* CTA */}
-          <section className="text-center">
-            <div className="bg-card rounded-xl shadow-card border border-border/50 p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Ready to Transform Your Business?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Schedule a discovery call to see how we can build a custom AI employee for your business
-              </p>
-              <Button variant="default" size="lg">
-                Schedule Discovery Call
-              </Button>
-            </div>
-          </section>
         </div>
       </div>
     </div>

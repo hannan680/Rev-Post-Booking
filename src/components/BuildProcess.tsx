@@ -241,12 +241,6 @@ const BuildProcess = () => {
             })}
           </div>
         </div>
-
-        <div className="text-center mt-16">
-          <Button variant="default" size="xl">
-            Schedule Your Discovery Call
-          </Button>
-        </div>
       </div>
     </section>
   );

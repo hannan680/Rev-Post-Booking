@@ -149,12 +149,6 @@ const BreakoutVideos = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            Download Complete Video Library
-          </Button>
-        </div>
       </div>
     </section>
   );

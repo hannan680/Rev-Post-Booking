@@ -242,12 +242,6 @@ const AudioDemos = () => {
             );
           })}
         </div>
-
-        <div className="text-center mt-16">
-          <Button variant="outline" size="lg">
-            Download All Audio Samples
-          </Button>
-        </div>
       </div>
     </section>
   );

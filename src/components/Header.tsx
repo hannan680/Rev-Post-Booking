@@ -11,20 +11,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* RevSquared AI Logo */}
           <div className="flex items-center space-x-3">
-            {/* Logo Icon - Neon Cyan Square with R² and Phone */}
-            <div className="relative">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center border-2 border-primary shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
-                <span className="text-background font-audiowide font-bold text-sm">R²</span>
-              </div>
-              <Phone className="absolute -top-1 -right-1 w-5 h-5 text-accent drop-shadow-[0_0_8px_hsl(var(--accent)/0.6)]" />
-            </div>
-            {/* Brand Name */}
-            <div className="flex flex-col">
-              <div className="flex items-baseline space-x-1">
-                <span className="text-xl font-pacifico text-primary">RevSquared</span>
-                <span className="text-xl font-pacifico text-accent">AI</span>
-              </div>
-            </div>
+            {/* Actual RevSquared AI Logo */}
+            <img 
+              src="/lovable-uploads/48cca130-afa7-4e1a-93df-545e6f93cc23.png" 
+              alt="RevSquared AI Logo"
+              className="w-12 h-12 object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -41,9 +33,6 @@ const Header = () => {
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">
               FAQ
             </a>
-            <Button variant="neon" size="lg">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,9 +76,6 @@ const Header = () => {
               >
                 FAQ
               </a>
-              <Button variant="neon" size="lg" className="w-full">
-                Get Started
-              </Button>
             </div>
           </div>
         )}

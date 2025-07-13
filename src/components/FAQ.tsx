@@ -103,7 +103,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-background">
+    <section id="faq" className="py-20 bg-background retro-grid">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
@@ -211,12 +211,9 @@ const FAQ = () => {
             <h3 className="text-2xl font-semibold text-super-bright mb-4">
               Still Have Questions?
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Schedule a 15-minute discovery call to discuss your specific needs
+            <p className="text-muted-foreground">
+              Your questions will be answered during your scheduled appointment
             </p>
-            <Button variant="default" size="lg">
-              Schedule Discovery Call
-            </Button>
           </div>
         </div>
       </div>
