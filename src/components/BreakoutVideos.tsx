@@ -12,7 +12,7 @@ const videos: Video[] = [{
   id: 1,
   title: "Building The Perfect Prompt. What Set's Us Apart",
   duration: "3:45",
-  description: "Deep dive into our comprehensive AI training methodology",
+  description: "Watch A Demo Of How We Dial In A Voice AI Prompt",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 2,
