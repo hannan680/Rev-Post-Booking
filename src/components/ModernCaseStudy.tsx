@@ -91,13 +91,189 @@ const caseStudyData: Record<string, CaseStudyData> = {
         description: "Full deployment with team training on qualified lead handling"
       }
     ]
+  },
+  "c4kr-real-estate": {
+    id: "c4kr-real-estate",
+    clientName: "Jason Bennett", 
+    company: "C4KR Real Estate Investments",
+    industry: "Real Estate Wholesaling",
+    location: "Multi-Market Operations",
+    employeeCount: "7-Figure Business",
+    challenge: "Jason Bennett built a 7-figure real estate investment business using pure mathematical thinking. But even the most systematic approach couldn't solve his core problem: he was drowning in manual lead management while trying to analyze deals, visit properties, and manage investors. He was spending 85% of time on leads that never converted, with only a 15% close rate.",
+    solution: "We built Jason a complete AI ecosystem that thinks like him - mathematical, systematic, and focused on qualified opportunities only. The AI instantly engages and qualifies motivated sellers, handles inbound calls with full real estate knowledge, and automatically prioritizes highest-probability deals.",
+    implementation: [
+      "SMS AI for instant seller engagement and qualification",
+      "Voice AI handling inbound calls with real estate expertise",
+      "CRM integration for seamless pipeline management", 
+      "Qualification intelligence for property types and motivation levels",
+      "Lead scoring to prioritize highest-probability deals",
+      "Real estate expertise including condition assessment and timeline detection"
+    ],
+    results: {
+      leadIncrease: "347%",
+      timesSaved: "42 hours/week",
+      revenueImpact: "$15K+ per deal",
+      additionalMetrics: [
+        { label: "Close Rate", value: "67%", icon: TrendingUp },
+        { label: "Time on Qualified Leads", value: "90%", icon: Clock },
+        { label: "Daily Quality Calls", value: "8 vs 50", icon: Users }
+      ]
+    },
+    testimonial: {
+      quote: "I built my business on math - every call has a dollar value. But I was wasting 85% of my time calling people who'd never sell. RevSquared built me an AI that thinks like me but works 24/7. Now I only talk to motivated sellers who are qualified and ready. My close rate went from 15% to 67%. One deal pays for the system twice over. I finally work ON my business instead of IN it.",
+      author: "Jason Bennett",
+      title: "Real Estate Investor",
+      rating: 5
+    },
+    timeline: [
+      {
+        week: 1,
+        milestone: "Deal Analysis & Process Mapping",
+        description: "Analyzed successful deals and mapped qualification criteria"
+      },
+      {
+        week: 2,
+        milestone: "AI Training & Real Estate Logic",
+        description: "Trained AI on property assessment, motivation detection, and investment criteria"
+      },
+      {
+        week: 3,
+        milestone: "Integration & Lead Scoring",
+        description: "Integrated CRM and implemented mathematical lead prioritization system"
+      },
+      {
+        week: 4,
+        milestone: "Launch & Optimization",
+        description: "Go-live with performance tracking and deal flow optimization"
+      }
+    ]
+  },
+  "radiant-security": {
+    id: "radiant-security",
+    clientName: "Chris",
+    company: "Radiant Security", 
+    industry: "Home Security Systems",
+    location: "Mississippi (National Reach)",
+    employeeCount: "Dual-Channel Business",
+    challenge: "Chris built Radiant Security around a smart dual model: professional installations within 50 miles, DIY kits everywhere else. But managing both channels was crushing operations. He had expensive overhead with in-house sales team + overseas call center, geographic complexity confusing reps, and incomplete sales processes missing upsells. Chris was personally handling middle-of-night emergency calls.",
+    solution: "We built Chris two specialized Voice AI agents - the most complex and longest prompts in our production history. The Sales Agent has geographic intelligence, motivation discovery, technical assessment, and seamless checkout integration. The Technical Support Agent handles complete troubleshooting with 24/7 availability.",
+    implementation: [
+      "Sales AI with geographic intelligence (DFY vs DIY territory decisions)",
+      "Motivation discovery understanding family protection needs",
+      "Technical assessment counting windows, doors, glass break needs",
+      "Equipment expertise recommending sensors, cameras, monitoring",
+      "Upselling mastery converting to $34/month monitoring service",
+      "Technical Support AI handling installation to advanced issues with 24/7 availability"
+    ],
+    results: {
+      leadIncrease: "40%",
+      timesSaved: "Sleep recovery achieved",
+      revenueImpact: "$23K/month",
+      additionalMetrics: [
+        { label: "Cost Reduction", value: "80%", icon: DollarSign },
+        { label: "Revenue Growth", value: "+30%", icon: TrendingUp },
+        { label: "After-Hours Calls", value: "0", icon: Clock }
+      ]
+    },
+    testimonial: {
+      quote: "I was burning money on sales staff and an overseas call center that didn't really understand my products. My old AI was basically useless for anything complex. RevSquared built me two AI agents that are smarter than most of my previous employees. The sales agent knows my 50-mile territory, sells the right equipment, and upsells monitoring better than humans ever did. The tech support agent handles everything - I literally sleep through the night now. 80% cost reduction and 30% revenue increase. It's the best investment I've ever made.",
+      author: "Chris",
+      title: "Founder, Radiant Security",
+      rating: 5
+    },
+    timeline: [
+      {
+        week: 1,
+        milestone: "Dual Model Analysis & Integration Planning", 
+        description: "Analyzed DFY vs DIY operations and planned complex system architecture"
+      },
+      {
+        week: 2,
+        milestone: "Dual AI Development & Training",
+        description: "Built separate Sales and Support AIs with complete security system knowledge"
+      },
+      {
+        week: 3,
+        milestone: "Complex Testing & Optimization",
+        description: "Tested geographic logic, equipment recommendations, and technical troubleshooting"
+      },
+      {
+        week: 4,
+        milestone: "Launch & Cost Optimization",
+        description: "Full deployment replacing expensive human labor with intelligent automation"
+      }
+    ]
+  },
+  "bana-roofing": {
+    id: "bana-roofing",
+    clientName: "Don",
+    company: "BANA Roofing & Solar",
+    industry: "Roofing & Solar Installation", 
+    location: "High-Growth Market",
+    employeeCount: "7-Figure to 8-Figure",
+    challenge: "Don built BANA Roofing into a 7-figure business through quality work and stellar reviews. His SEO was crushing it, ads had high ROAS, but success was strangling his growth. Every lead that made him money was creating two problems: phone chaos with constantly ringing qualified leads, response delays taking days to reach hot prospects, and feeding competition through slow follow-up.",
+    solution: "We built Don a complete AI ecosystem that captures leads from every possible touchpoint and converts them while he focuses on scaling. Complete AI coverage includes SMS AI, Voice AI, Website Chat AI, and Facebook Messenger AI - all feeding into a single qualification pipeline with roofing & solar intelligence.",
+    implementation: [
+      "SMS AI for instant text response to all inbound leads",
+      "Voice AI handling phone calls with roofing/solar expertise", 
+      "Website Chat AI converting visitors 24/7",
+      "Facebook Messenger AI capturing social media inquiries",
+      "Unified system feeding all channels into single qualification pipeline",
+      "Storm damage assessment and insurance claim guidance with solar savings calculations"
+    ],
+    results: {
+      leadIncrease: "500%", 
+      timesSaved: "60 hours/week",
+      revenueImpact: "8-figure scaling",
+      additionalMetrics: [
+        { label: "Response Time", value: "Seconds", icon: Clock },
+        { label: "Team Growth", value: "+5 reps", icon: Users },
+        { label: "Ad Scaling", value: "Unlimited", icon: TrendingUp }
+      ]
+    },
+    testimonial: {
+      quote: "I was drowning in my own success. My phone never stopped ringing, but I was losing deals because I couldn't get back to people fast enough. I was feeding my competition while working 16-hour days. RevSquared built me AI for every channel - SMS, voice, website, Facebook - everything. Now I respond to leads in seconds instead of days. I hired 5 more sales reps just to handle all the appointments the AI books. I'm finally scaling to 8-figures because I can actually handle the volume. Best part? I can sleep again.",
+      author: "Don",
+      title: "Owner, BANA Roofing & Solar",
+      rating: 5
+    },
+    timeline: [
+      {
+        week: 1,
+        milestone: "Omnichannel Analysis & Integration Planning",
+        description: "Mapped all lead sources and planned unified AI ecosystem"
+      },
+      {
+        week: 2,
+        milestone: "Multi-Channel AI Development",
+        description: "Built AI for SMS, voice, website chat, and social media with roofing expertise"
+      },
+      {
+        week: 3,
+        milestone: "Unified Pipeline Testing",
+        description: "Tested cross-channel lead capture and single qualification system"
+      },
+      {
+        week: 4,
+        milestone: "Scale-Ready Launch",
+        description: "Deployed omnichannel system enabling unlimited growth capacity"
+      }
+    ]
   }
-  // ... other case studies (truncated for brevity)
+};
+
+// Get the next case study in the sequence
+const getNextCaseStudy = (currentId: string) => {
+  const caseStudyIds = Object.keys(caseStudyData);
+  const currentIndex = caseStudyIds.indexOf(currentId);
+  const nextIndex = (currentIndex + 1) % caseStudyIds.length;
+  return caseStudyData[caseStudyIds[nextIndex]];
 };
 
 const ModernCaseStudy = () => {
   const { id } = useParams<{ id: string }>();
   const caseStudy = id ? caseStudyData[id] : null;
+  const nextCaseStudy = id ? getNextCaseStudy(id) : null;
 
   if (!caseStudy) {
     return (
@@ -269,21 +445,79 @@ const ModernCaseStudy = () => {
               </div>
             </div>
 
-            {/* CTA */}
-            <div className="text-center bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-12">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Ready for Similar Results?</h3>
-              <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                See how we can build a custom AI solution for your business in just 30 days.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-accent">
-                  Schedule Strategy Call
-                </Button>
-                <Button variant="outline" size="lg">
-                  View More Case Studies
-                </Button>
+            {/* Next Case Study Preview */}
+            {nextCaseStudy && (
+              <div className="bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20 rounded-2xl p-8">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Next Success Story</h3>
+                  <p className="text-muted-foreground">Continue exploring our client transformations</p>
+                </div>
+                
+                <Link 
+                  to={`/case-study/${nextCaseStudy.id}`}
+                  className="group block hover:scale-[1.02] transition-all duration-300"
+                >
+                  <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <div className="grid md:grid-cols-2 gap-6 items-center">
+                      <div>
+                        <div className="flex items-center gap-2 mb-3">
+                          <span className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full font-medium">
+                            {nextCaseStudy.industry}
+                          </span>
+                          <span className="text-sm text-muted-foreground">{nextCaseStudy.location}</span>
+                        </div>
+                        
+                        <h4 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                          {nextCaseStudy.company}
+                        </h4>
+                        
+                        <p className="text-muted-foreground mb-4 line-clamp-2">
+                          How {nextCaseStudy.clientName} transformed their business with custom AI automation
+                        </p>
+                        
+                        <div className="flex items-center gap-4 text-sm">
+                          <div className="flex items-center gap-1">
+                            <TrendingUp className="w-4 h-4 text-primary" />
+                            <span className="font-semibold text-primary">+{nextCaseStudy.results.leadIncrease}</span>
+                            <span className="text-muted-foreground">leads</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <DollarSign className="w-4 h-4 text-accent" />
+                            <span className="font-semibold text-accent">{nextCaseStudy.results.revenueImpact}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg p-6 text-center">
+                        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <span className="text-2xl font-bold text-primary">
+                            {nextCaseStudy.clientName.charAt(0)}
+                          </span>
+                        </div>
+                        <div className="text-sm text-muted-foreground mb-2">Client Spotlight</div>
+                        <div className="font-semibold text-foreground">{nextCaseStudy.clientName}</div>
+                        <div className="text-sm text-muted-foreground">{nextCaseStudy.testimonial.title}</div>
+                        
+                        <div className="mt-4 text-center">
+                          <Button size="sm" className="group-hover:scale-105 transition-transform">
+                            Read Case Study
+                            <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                
+                <div className="text-center mt-6">
+                  <Link to="/#success-stories">
+                    <Button variant="outline" size="lg">
+                      View All Case Studies
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
