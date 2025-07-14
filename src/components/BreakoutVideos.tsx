@@ -73,9 +73,7 @@ const BreakoutVideos = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">Breakout Videos </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get an inside look at how we develop custom AI employees for your business
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">These videos allow you to "Do Your Research" and get a deep-dive in how we deliver AI solutions.  </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
