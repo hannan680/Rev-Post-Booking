@@ -14,51 +14,51 @@ interface AudioDemo {
 const audioDemos: AudioDemo[] = [
   {
     id: 1,
-    title: "Dental Appointment Booking",
-    industry: "Dental Services",
-    duration: "2:15",
-    description: "AI handles dental appointment request, checks availability, and schedules cleaning",
-    scenario: "Patient calling to schedule routine dental cleaning appointment"
+    title: "Dental Practice - Inbound",
+    industry: "Healthcare",
+    duration: "",
+    description: "AI handling appointment scheduling and patient inquiries for a busy dental office.",
+    scenario: "Patient calling to schedule a cleaning appointment with specific time constraints"
   },
   {
     id: 2,
-    title: "Roofing Damage Assessment",
-    industry: "Roofing Services",
-    duration: "2:45", 
-    description: "AI qualifies storm damage claim, gathers details, and schedules inspection",
-    scenario: "Homeowner calling after hailstorm damaged their roof"
+    title: "Roofing Company - Inbound", 
+    industry: "Construction",
+    duration: "",
+    description: "Emergency roof repair call with detailed damage assessment and urgent scheduling.",
+    scenario: "Homeowner with storm damage requiring immediate inspection and repair estimate"
   },
   {
     id: 3,
-    title: "Doctor Appointment Outreach",
-    industry: "Medical Services",
-    duration: "1:50",
-    description: "AI conducts outbound call for annual checkup reminder and appointment scheduling",
-    scenario: "Automated outreach to patients due for annual physical examination"
+    title: "Medical Practice - Outbound",
+    industry: "Healthcare", 
+    duration: "",
+    description: "AI conducting patient follow-ups and appointment confirmations for medical practice.",
+    scenario: "Following up with patients post-procedure and scheduling routine check-ups"
   },
   {
     id: 4,
-    title: "Legal Consultation Outreach",
-    industry: "Legal Services", 
-    duration: "2:30",
-    description: "AI reaches out to potential clients for personal injury consultation",
-    scenario: "Following up on legal inquiry form submission for accident case"
+    title: "Legal Office - Outbound",
+    industry: "Legal Services",
+    duration: "",
+    description: "AI reaching out to potential clients for consultation scheduling and case evaluation.",
+    scenario: "Following up with leads who inquired about personal injury representation"
   },
   {
     id: 5,
-    title: "Roofing Sales Outreach",
-    industry: "Roofing Services",
-    duration: "3:10",
-    description: "AI conducts outbound sales call for roof replacement services",
-    scenario: "Proactive outreach to homeowners in targeted neighborhood for roof upgrades"
+    title: "Roofing Company - Outbound",
+    industry: "Construction",
+    duration: "",
+    description: "Proactive outreach for roof maintenance and inspection services to existing customers.",
+    scenario: "Seasonal maintenance reminders and upselling additional roofing services"
   },
   {
     id: 6,
-    title: "Real Estate Investment Lead",
-    industry: "Real Estate Investment",
-    duration: "2:55",
-    description: "AI qualifies property sellers for cash purchase and schedules evaluation",
-    scenario: "Outbound call to homeowner about quick cash sale opportunity"
+    title: "Real Estate Investing - Outbound",
+    industry: "Real Estate",
+    duration: "",
+    description: "AI contacting property owners for potential investment opportunities and acquisitions.",
+    scenario: "Reaching out to homeowners about cash offers for their properties"
   }
 ];
 
@@ -172,7 +172,7 @@ const AudioDemos = () => {
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         {demo.industry}
                       </span>
-                      <span className="text-muted-foreground text-sm">{demo.duration}</span>
+                      
                     </div>
                     <h3 className="font-semibold text-super-bright mb-2">{demo.title}</h3>
                   </div>
@@ -190,7 +190,7 @@ const AudioDemos = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs text-muted-foreground">
                       <span>{formatTime(currentTime)}</span>
-                      <span>{demo.duration}</span>
+                      <span>Ready to play</span>
                     </div>
                     <div className="h-2 bg-muted rounded-full overflow-hidden">
                       <div 

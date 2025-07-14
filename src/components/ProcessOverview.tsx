@@ -179,10 +179,6 @@ const ProcessOverview = () => {
                   Expected timeline: {processSteps.find(s => s.number === activeStep)?.duration}
                 </div>
               </div>
-              <Button className="bg-gradient-to-r from-primary to-accent text-primary-foreground">
-                Learn More
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
             </div>
           </div>
         </div>

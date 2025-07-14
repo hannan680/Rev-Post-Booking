@@ -43,16 +43,11 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-            Complete transparency into our proven methodology for businesses investing 
-            <span className="text-primary font-semibold bg-primary/10 px-2 py-1 rounded"> $5K-7.5K </span>
-            in custom AI automation solutions
+            A transparent look at RevSquared for Due Diligence & Decision Making.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground">
-              Watch Development Process
-            </Button>
-            <Button variant="outline" size="lg">
-              Download Case Studies
+              Download The AI Playbook
             </Button>
           </div>
         </div>
@@ -80,7 +75,6 @@ const HeroSection = () => {
                   <p className="text-white text-lg font-audiowide font-semibold tracking-wide drop-shadow-lg">
                     Watch Our Complete AI Development Process
                   </p>
-                  <p className="text-warning font-semibold drop-shadow-lg">12:45 duration</p>
                 </div>
               </div>
 
@@ -113,7 +107,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   
-                  <span className="text-white text-sm">4:20 / 12:45</span>
+                  <span className="text-white text-sm">Playing...</span>
                 </div>
               </div>
             </div>

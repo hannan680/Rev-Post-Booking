@@ -11,37 +11,43 @@ interface Video {
 const videos: Video[] = [{
   id: 1,
   title: "Building The Perfect Prompt. What Set's Us Apart",
-  duration: "3:45",
+  duration: "",
   description: "Watch A Demo Of How We Dial In A Voice AI Prompt",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 2,
   title: "Live AI Conversation Test",
-  duration: "4:20",
+  duration: "",
   description: "Watch real-time AI interactions with potential customers",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 3,
   title: "Client Communication Process",
-  duration: "2:30",
+  duration: "",
   description: "Our systematic approach to client collaboration",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 4,
   title: "SMS AI The Lead Conversion Powerhouse",
-  duration: "3:15",
+  duration: "",
   description: "A Deep-Dive Into The SMS AI System & How It Actually Schedules Appointments",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 5,
-  title: "Client Success Stories",
-  duration: "2:50",
-  description: "Real results from businesses using our AI systems",
+  title: "Sales Manager AI",
+  duration: "",
+  description: "Increasing conversions with AI-powered sales management and optimization",
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 6,
+  title: "Client Success Stories",
+  duration: "",
+  description: "Real results from businesses using our AI systems",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 7,
   title: "ROI Calculator Walkthrough",
-  duration: "4:10",
+  duration: "",
   description: "Calculate your potential return on AI investment",
   thumbnail: "/api/placeholder/300/200"
 }];
@@ -89,10 +95,6 @@ const BreakoutVideos = () => {
                     </div>
                   </div>
                   
-                  {/* Duration Badge */}
-                  <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
-                    {video.duration}
-                  </div>
 
                   {/* Playing Indicator */}
                   {playingStates[video.id] && <div className="absolute bottom-2 left-2 flex items-center space-x-2">
@@ -112,10 +114,6 @@ const BreakoutVideos = () => {
 
                   {/* Progress Bar (shown when playing) */}
                   {playingStates[video.id] && <div className="mt-4">
-                      <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">
-                        <span>1:23</span>
-                        <span>{video.duration}</span>
-                      </div>
                       <div className="h-1 bg-muted rounded-full overflow-hidden">
                         <div className="h-full bg-primary w-1/3 rounded-full transition-all duration-300"></div>
                       </div>
