@@ -86,12 +86,18 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-text': 'var(--gradient-text)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-highlight': 'var(--gradient-highlight)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'card': 'var(--shadow-card)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'neon-cyan': 'var(--shadow-neon-cyan)',
+				'neon-purple': 'var(--shadow-neon-purple)',
+				'neon-yellow': 'var(--shadow-neon-yellow)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
