@@ -20,7 +20,7 @@ const faqItems: FAQItem[] = [
     id: 2,
     category: "technical", 
     question: "What systems does your AI integrate with?",
-    answer: "We integrate with virtually any CRM (Salesforce, HubSpot, Pipedrive, etc.), calendar systems (Calendly, Google Calendar), communication platforms (SMS, email, phone), and payment processors. Our team handles all technical integrations during the build process."
+    answer: "We integrate with 1000+ different software platforms including virtually any CRM (Salesforce, HubSpot, Pipedrive, etc.), calendar systems (Calendly, Google Calendar), communication platforms (SMS, email, phone), payment processors, and specialized industry tools. Our team handles all technical integrations during the build process."
   },
   {
     id: 3,
