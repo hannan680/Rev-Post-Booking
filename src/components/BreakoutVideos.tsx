@@ -10,7 +10,7 @@ interface Video {
 }
 const videos: Video[] = [{
   id: 1,
-  title: "The 147-Page Custom Prompt",
+  title: "Building The Perfect Prompt. What Set's Us Apart",
   duration: "3:45",
   description: "Deep dive into our comprehensive AI training methodology",
   thumbnail: "/api/placeholder/300/200"
