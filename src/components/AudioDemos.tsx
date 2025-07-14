@@ -14,51 +14,51 @@ interface AudioDemo {
 const audioDemos: AudioDemo[] = [
   {
     id: 1,
-    title: "Emergency HVAC Call",
-    industry: "HVAC Services",
-    duration: "2:30",
-    description: "AI handles urgent repair request, qualifies problem, and books same-day service",
-    scenario: "Customer with broken AC on 95°F day needs immediate help"
+    title: "Dental Appointment Booking",
+    industry: "Dental Services",
+    duration: "2:15",
+    description: "AI handles dental appointment request, checks availability, and schedules cleaning",
+    scenario: "Patient calling to schedule routine dental cleaning appointment"
   },
   {
     id: 2,
-    title: "Real Estate Lead Qualification",
-    industry: "Real Estate",
-    duration: "3:15", 
-    description: "AI qualifies buyer, determines budget, and schedules property showing",
-    scenario: "First-time homebuyer inquiring about downtown condo listing"
+    title: "Roofing Damage Assessment",
+    industry: "Roofing Services",
+    duration: "2:45", 
+    description: "AI qualifies storm damage claim, gathers details, and schedules inspection",
+    scenario: "Homeowner calling after hailstorm damaged their roof"
   },
   {
     id: 3,
-    title: "Business Loan Application",
-    industry: "Financial Services",
-    duration: "2:45",
-    description: "AI gathers loan requirements, explains process, and initiates application",
-    scenario: "Small business owner seeking equipment financing"
+    title: "Doctor Appointment Outreach",
+    industry: "Medical Services",
+    duration: "1:50",
+    description: "AI conducts outbound call for annual checkup reminder and appointment scheduling",
+    scenario: "Automated outreach to patients due for annual physical examination"
   },
   {
     id: 4,
-    title: "Moving Service Booking",
-    industry: "Moving & Storage", 
-    duration: "1:50",
-    description: "AI collects moving details, provides quote, and schedules in-home estimate",
-    scenario: "Family planning cross-country relocation"
+    title: "Legal Consultation Outreach",
+    industry: "Legal Services", 
+    duration: "2:30",
+    description: "AI reaches out to potential clients for personal injury consultation",
+    scenario: "Following up on legal inquiry form submission for accident case"
   },
   {
     id: 5,
-    title: "Price Objection Handling",
-    industry: "Professional Services",
-    duration: "2:10",
-    description: "AI addresses cost concerns, explains value, and offers payment options",
-    scenario: "Client questioning service pricing during consultation"
+    title: "Roofing Sales Outreach",
+    industry: "Roofing Services",
+    duration: "3:10",
+    description: "AI conducts outbound sales call for roof replacement services",
+    scenario: "Proactive outreach to homeowners in targeted neighborhood for roof upgrades"
   },
   {
     id: 6,
-    title: "Follow-up Sequence Call",
-    industry: "Sales & Marketing",
-    duration: "1:30",
-    description: "AI nurtures warm lead with personalized follow-up and booking attempt",
-    scenario: "Previous inquiry follow-up after 48-hour no response"
+    title: "Real Estate Investment Lead",
+    industry: "Real Estate Investment",
+    duration: "2:55",
+    description: "AI qualifies property sellers for cash purchase and schedules evaluation",
+    scenario: "Outbound call to homeowner about quick cash sale opportunity"
   }
 ];
 
