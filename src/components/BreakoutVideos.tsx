@@ -28,7 +28,7 @@ const videos: Video[] = [{
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 4,
-  title: "SMS AI & Pipeline Demo",
+  title: "SMS AI The Lead Conversion Powerhouse",
   duration: "3:15",
   description: "See how our AI handles SMS leads and sales pipelines",
   thumbnail: "/api/placeholder/300/200"
