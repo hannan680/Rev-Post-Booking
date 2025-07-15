@@ -34,21 +34,21 @@ const videos: Video[] = [{
   thumbnail: "/api/placeholder/300/200"
 }, {
   id: 5,
-  title: "ROI Calculator Walkthrough",
-  duration: "",
-  description: "Calculate your potential return on AI investment",
-  thumbnail: "/api/placeholder/300/200"
-}, {
-  id: 6,
   title: "Sales Manager AI",
   duration: "",
   description: "Increasing conversions with AI-powered sales management and optimization",
   thumbnail: "/api/placeholder/300/200"
 }, {
-  id: 7,
+  id: 6,
   title: "Client Success Stories",
   duration: "",
   description: "Real results from businesses using our AI systems",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 7,
+  title: "ROI Calculator Walkthrough",
+  duration: "",
+  description: "Calculate your potential return on AI investment",
   thumbnail: "/api/placeholder/300/200"
 }];
 const BreakoutVideos = () => {
