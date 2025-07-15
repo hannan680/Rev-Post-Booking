@@ -36,14 +36,14 @@ const HeroSection = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
-            Inside RevSquared: How We Actually Build Your
-            <br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              AI
+              Inside RevSquared:
             </span>
+            <br />
+            How We Actually Build Your AI
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-            A transparent look at RevSquared for Due Diligence & Decision Making.
+            A complete look at our process, case studies, and what to expect on our call
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground">
