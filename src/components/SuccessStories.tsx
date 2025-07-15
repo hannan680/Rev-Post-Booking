@@ -98,7 +98,7 @@ const SuccessStories = () => {
           {successStories.map((story, index) => (
             <div 
               key={story.id}
-              className="group bg-gradient-card card-glow overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in rounded-xl"
+              className="group bg-gradient-card card-glow overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in rounded-xl flex flex-col h-full"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Card Header */}
@@ -124,7 +124,7 @@ const SuccessStories = () => {
               </div>
 
               {/* Metrics Grid */}
-              <div className="p-6">
+              <div className="p-6 flex-grow flex flex-col justify-between">
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <div className="text-center">
                     <div className="w-10 h-10 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-2">
