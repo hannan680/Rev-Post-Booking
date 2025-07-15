@@ -10,24 +10,42 @@ interface Video {
 }
 const videos: Video[] = [{
   id: 1,
+  title: "Building The Perfect Prompt. What Set's Us Apart",
+  duration: "",
+  description: "Watch A Demo Of How We Dial In A Voice AI Prompt",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 2,
+  title: "Live AI Conversation Test",
+  duration: "",
+  description: "Watch real-time AI interactions with potential customers",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 3,
+  title: "Client Communication Process",
+  duration: "",
+  description: "Our systematic approach to client collaboration",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 4,
   title: "SMS AI The Lead Conversion Powerhouse",
   duration: "",
   description: "A Deep-Dive Into The SMS AI System & How It Actually Schedules Appointments",
   thumbnail: "/api/placeholder/300/200"
 }, {
-  id: 2,
-  title: "Sales Manager AI",
-  duration: "",
-  description: "Increasing conversions with AI-powered sales management and optimization",
-  thumbnail: "/api/placeholder/300/200"
-}, {
-  id: 3,
+  id: 5,
   title: "ROI Calculator Walkthrough",
   duration: "",
   description: "Calculate your potential return on AI investment",
   thumbnail: "/api/placeholder/300/200"
 }, {
-  id: 4,
+  id: 6,
+  title: "Sales Manager AI",
+  duration: "",
+  description: "Increasing conversions with AI-powered sales management and optimization",
+  thumbnail: "/api/placeholder/300/200"
+}, {
+  id: 7,
   title: "Client Success Stories",
   duration: "",
   description: "Real results from businesses using our AI systems",
