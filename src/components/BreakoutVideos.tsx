@@ -83,10 +83,10 @@ const BreakoutVideos = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {videos.map((video, index) => <div key={video.id} className="group cursor-pointer animate-fade-in" style={{
+          {videos.map((video, index) => <div key={video.id} className="group cursor-pointer animate-fade-in h-full" style={{
           animationDelay: `${index * 0.1}s`
         }} onClick={() => toggleVideo(video.id)}>
-              <div className="bg-gradient-card card-glow rounded-xl overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <div className="bg-gradient-card card-glow rounded-xl overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 h-full flex flex-col">
                 {/* Video Thumbnail */}
                 <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
                   <div className="absolute inset-0 flex items-center justify-center">
