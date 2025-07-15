@@ -206,15 +206,6 @@ const FAQ = () => {
             </div>
           )}
 
-          {/* Still Have Questions CTA */}
-          <div className="text-center mt-16 p-8 bg-gradient-card card-glow rounded-xl">
-            <h3 className="text-2xl font-semibold text-super-bright mb-4">
-              Still Have Questions?
-            </h3>
-            <p className="text-muted-foreground">
-              Your questions will be answered during your scheduled appointment
-            </p>
-          </div>
         </div>
       </div>
     </section>
