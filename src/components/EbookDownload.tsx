@@ -11,15 +11,11 @@ const EbookDownload = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Download Our
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              AI Implementation Playbook
-            </span>
+            The Real Story Behind Breaking Scaling Walls
           </h2>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get the complete guide to implementing AI in your business. 50+ pages of strategies, 
-            frameworks, and real-world examples from successful AI deployments.
+            See how 4 companies broke through their capacity limits and unlocked millions in additional revenue using AI.
           </p>
           
           <div className="bg-card border border-primary/20 rounded-2xl p-8 mb-8 shadow-lg">
@@ -28,24 +24,24 @@ const EbookDownload = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                   <BookOpen className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">50+ Pages</h3>
-                <p className="text-sm text-muted-foreground">Comprehensive guide</p>
+                <h3 className="font-semibold text-foreground mb-2">Real Case Studies</h3>
+                <p className="text-sm text-muted-foreground">Marcus, Don, Sarah, Tom</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                   <FileText className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">Case Studies</h3>
-                <p className="text-sm text-muted-foreground">Real implementations</p>
+                <h3 className="font-semibold text-foreground mb-2">Scaling Breakthroughs</h3>
+                <p className="text-sm text-muted-foreground">$7M+ revenue unlocks</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                   <Star className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">ROI Frameworks</h3>
-                <p className="text-sm text-muted-foreground">Measure success</p>
+                <h3 className="font-semibold text-foreground mb-2">Behind the Scenes</h3>
+                <p className="text-sm text-muted-foreground">How I built this after hitting my own wall</p>
               </div>
             </div>
             
