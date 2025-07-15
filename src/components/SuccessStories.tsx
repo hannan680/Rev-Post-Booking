@@ -26,11 +26,11 @@ const successStories: SuccessStory[] = [
     industry: "Business Lending",
     keyMetric: "Daily Contact Volume",
     metricValue: "20,000",
-    description: "Transformed ethical lending operations with AI that scales integrity while outperforming promise-heavy brokers.",
+    description: "Scaling lending operation that needed to handle massive lead volume without burning through overhead. AI processes 20K contacts daily while maintaining quality conversations and ethical standards.",
     results: {
       leadIncrease: "300%",
       timesSaved: "40 hours/week",
-      revenueImpact: "Predictable math"
+      revenueImpact: "Predictable Revenue"
     },
     image: "/api/placeholder/400/300"
   },
@@ -41,7 +41,7 @@ const successStories: SuccessStory[] = [
     industry: "Real Estate Investment",
     keyMetric: "Close Rate",
     metricValue: "67%",
-    description: "Converted mathematical mind from manual processes to AI-powered real estate machine with systematic deal flow.",
+    description: "Real estate investor who needed systematic deal flow instead of manual chaos. AI qualification and follow-up turned his operation into a predictable revenue machine.",
     results: {
       leadIncrease: "347%",
       timesSaved: "42 hours/week",
@@ -56,11 +56,11 @@ const successStories: SuccessStory[] = [
     industry: "Home Security Systems",
     keyMetric: "Cost Reduction",
     metricValue: "80%",
-    description: "Dual AI agents handle complex security sales and support, eliminating expensive overhead while growing revenue.",
+    description: "Complex security sales requiring technical expertise and ongoing support. Dual AI system handles both sales and customer service, cutting overhead while growing revenue.",
     results: {
-      leadIncrease: "40%",
-      timesSaved: "Sleep recovery",
-      revenueImpact: "$23K/month impact"
+      leadIncrease: "80%",
+      timesSaved: "Dual AI Coverage",
+      revenueImpact: "Revenue Growth"
     },
     image: "/api/placeholder/400/300"
   },
@@ -68,14 +68,14 @@ const successStories: SuccessStory[] = [
     id: "bana-roofing",
     clientName: "Don",
     company: "BANA Roofing & Solar",
-    industry: "Roofing & Solar",
+    industry: "Roofing and Solar",
     keyMetric: "Response Time",
-    metricValue: "Seconds",
-    description: "Omnichannel AI command center transforms 7-figure success trap into 8-figure scaling machine.",
+    metricValue: "Instant",
+    description: "7-figure roofing company hitting capacity limits during storm season. AI command center handles unlimited call volume and scales the business into 8-figures.",
     results: {
-      leadIncrease: "500%",
-      timesSaved: "60 hours/week",
-      revenueImpact: "8-figure scaling"
+      leadIncrease: "Instant Response",
+      timesSaved: "Unlimited Capacity",
+      revenueImpact: "8-Figure Scaling"
     },
     image: "/api/placeholder/400/300"
   }
@@ -87,10 +87,10 @@ const SuccessStories = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-super-bright mb-6">
-            Proven Results from Real Clients
+            From Scaling Walls to 8-Figure Growth
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            See how businesses across industries have transformed their operations with custom AI employees
+            How 4 companies removed their biggest bottlenecks and transformed their operations. Here are the improved versions of your existing case studies:
           </p>
         </div>
 
