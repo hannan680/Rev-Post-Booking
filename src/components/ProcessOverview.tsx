@@ -24,50 +24,50 @@ interface ProcessStep {
 const processSteps: ProcessStep[] = [
   {
     number: 1,
-    title: "Business Analysis",
-    description: "Deep dive into your business processes, customer interactions, and current pain points to design the perfect AI solution.",
+    title: "Business Deep-Dive",
+    description: "We record how you currently handle calls, map out your sales process, and document everything your AI needs to know about your business.",
     icon: Target,
     duration: "Week 1",
     keyOutputs: [
-      "47-question business assessment",
-      "Process mapping & workflow analysis", 
-      "Technical requirements document"
+      "Current call handling analysis",
+      "Sales process mapping", 
+      "Business knowledge documentation"
     ]
   },
   {
     number: 2,
-    title: "AI Development",
-    description: "Create your custom 147-page AI prompt, train the personality, and integrate industry-specific knowledge.",
+    title: "AI Training",
+    description: "We build your custom AI brain (usually 100+ pages), train it on your specific processes, and make it sound like your best employee.",
     icon: Settings,
     duration: "Week 2", 
     keyOutputs: [
-      "Custom 147-page AI prompt",
-      "Voice & personality calibration",
-      "Industry knowledge integration"
+      "Custom AI brain development (100+ pages)",
+      "Process-specific training",
+      "Employee voice & personality calibration"
     ]
   },
   {
     number: 3,
-    title: "Integration & Testing",
-    description: "Connect with your existing systems, test all scenarios, and optimize performance across channels.",
+    title: "Testing & Integration",
+    description: "We connect everything to your existing systems, test every scenario, and make sure it works exactly how you need it to.",
     icon: Zap,
     duration: "Week 3",
     keyOutputs: [
-      "CRM & workflow integration",
-      "Multi-channel testing complete",
+      "System integration & connections",
+      "Comprehensive scenario testing",
       "Performance optimization"
     ]
   },
   {
     number: 4,
-    title: "Launch & Training", 
-    description: "Deploy your AI employee, train your team, and provide ongoing support for optimal results.",
+    title: "Go Live", 
+    description: "We deploy your AI, train your team on how it works, and stick around to make sure everything runs smoothly.",
     icon: Rocket,
     duration: "Week 4",
     keyOutputs: [
-      "Live AI system deployment",
-      "Team training & documentation",
-      "Performance analytics setup"
+      "AI system deployment",
+      "Team training & support",
+      "Ongoing monitoring & optimization"
     ]
   }
 ];
@@ -83,14 +83,10 @@ const ProcessOverview = () => {
             Our Proven Process
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            30-Day Development
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Methodology
-            </span>
+            How We Build Your AI in 30 Days
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A systematic approach that delivers your custom AI employee in just one month, 
-            with full transparency and regular check-ins.
+            No BS, no delays. Here&apos;s exactly what happens each week so you know what to expect.
           </p>
         </div>
 
