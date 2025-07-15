@@ -12,63 +12,57 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: 1,
-    category: "general",
-    question: "How is this different from using ChatGPT or other AI chatbots?",
-    answer: "Our AI employees are custom-built for your specific business with 147+ pages of training material, industry expertise, and direct integration with your existing systems. Unlike generic chatbots, our AI understands your products, services, pricing, and can actually take actions like booking appointments and updating your CRM."
+    category: "pricing",
+    question: "How much will I save vs. hiring more people?",
+    answer: "A receptionist costs $37K salary plus $30K+ in benefits (health insurance, 401K, PTO, etc.) = $67K+ annually. And they work 40 hours/week. Our AI works 168 hours/week for less than the cost of benefits alone. Plus no sick days, no turnover, no training time."
   },
   {
     id: 2,
-    category: "technical", 
-    question: "What systems does your AI integrate with?",
-    answer: "We integrate with 1000+ different software platforms including virtually any CRM (Salesforce, HubSpot, Pipedrive, etc.), calendar systems (Calendly, Google Calendar), communication platforms (SMS, email, phone), payment processors, and specialized industry tools. Our team handles all technical integrations during the build process."
+    category: "general", 
+    question: "How is this different from chatbots or generic AI?",
+    answer: "Chatbots follow scripts. Our AI is custom-trained on your business with 100+ pages of specific knowledge. It knows your pricing, processes, and can actually take actions like booking appointments and updating your CRM. It's like having your best employee available 24/7."
   },
   {
     id: 3,
     category: "pricing",
-    question: "What's included in the $5K-$7.5K investment?",
-    answer: "Complete AI development, 147-page custom prompt creation, system integrations, team training, 30-day build process, ongoing support, and performance optimization. The exact price depends on complexity and integrations needed."
+    question: "What kind of investment are we talking about?",
+    answer: "Projects range from $3,500 to $20K depending on complexity and the size of the problem we're solving. Monthly support runs $497-$1,500 and includes all software costs plus premium support. Our average client sees over 800% ROI in the first year alone, with some seeing returns in the thousands. Most businesses break even within 30-60 days."
   },
   {
     id: 4,
-    category: "process",
-    question: "How long before I see results?",
-    answer: "Most clients see immediate improvements in response times once we go live (Week 4). Full ROI typically achieves within 60-90 days as the AI learns and optimizes. Our average client sees 180%+ lead increase within the first quarter."
+    category: "general",
+    question: "What problems signal I need this?",
+    answer: "You're missing calls outside business hours. Your team is overwhelmed during busy periods. You want to scale ads but can't handle more volume. You're paying for answering services that don't understand your business. Your leads aren't getting followed up fast enough."
   },
   {
     id: 5,
-    category: "technical",
-    question: "Can the AI handle complex industry-specific conversations?",
-    answer: "Absolutely. Our 147-page training includes deep industry research, competitor analysis, common objections, pricing strategies, and technical specifications. We've successfully deployed AI for HVAC, legal, real estate, healthcare, and dozens of other specialized industries."
+    category: "process",
+    question: "How quickly will I see results?",
+    answer: "Most clients start seeing impact within the first week of going live. Marcus was booking qualified appointments on day one. The AI works immediately - the ROI builds from there."
   },
   {
     id: 6,
     category: "general",
-    question: "What if my customers prefer talking to humans?",
-    answer: "Our AI is designed to be indistinguishable from a human assistant. It uses natural conversation patterns, industry terminology, and can seamlessly transfer to human team members when needed. Most customers don't realize they're talking to AI."
+    question: "What if my customers hate talking to AI?",
+    answer: "They won't know it's AI. Our systems sound completely natural and are trained on your specific industry. Most customers prefer it because they get instant, knowledgeable responses instead of waiting hours for callbacks."
   },
   {
     id: 7,
     category: "process",
-    question: "Do you provide training for my team?",
-    answer: "Yes! Week 4 includes comprehensive team training, documentation, and ongoing support. We ensure everyone knows how to work with their new AI employee, including monitoring, optimization, and escalation procedures."
+    question: "What do I need to prepare?",
+    answer: "Nothing upfront. Week 1 is our discovery process where we record how you currently handle calls and document your processes. We handle all the technical setup. You just need to be available for the initial interviews."
   },
   {
     id: 8,
-    category: "pricing",
-    question: "Are there ongoing monthly fees?",
-    answer: "Beyond the initial build cost, there are minimal ongoing costs for AI usage (typically $200-500/month depending on volume) and optional premium support plans. We're transparent about all costs upfront - no hidden fees."
+    category: "general",
+    question: "What happens if it doesn't work?",
+    answer: "We've never had a project fail because we don't start building until we're 100% confident it will work. That's what the discovery week is for - making sure this is the right fit before we write any code."
   },
   {
     id: 9,
-    category: "technical",
-    question: "What happens if the AI doesn't understand something?",
-    answer: "Our AI is trained to recognize when it needs human help and seamlessly transfer conversations. We also include continuous learning features that improve responses over time, plus our team monitors performance and makes optimizations."
-  },
-  {
-    id: 10,
-    category: "general",
-    question: "How do you ensure data security and privacy?",
-    answer: "We follow enterprise-grade security protocols, including encryption, secure API connections, and compliance with GDPR, CCPA, and industry-specific regulations. Your data never leaves your approved systems without explicit permission."
+    category: "pricing",
+    question: "Are there ongoing monthly fees?",
+    answer: "Yes, $497-$1,500/month depending on usage. This covers all software licenses, hosting, AI processing costs, and premium support. No hidden fees, no surprises. You're not managing multiple vendor relationships."
   }
 ];
 
