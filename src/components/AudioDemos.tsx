@@ -9,57 +9,70 @@ interface AudioDemo {
   duration: string;
   description: string;
   scenario: string;
+  audio: string;
 }
 
 const audioDemos: AudioDemo[] = [
   {
     id: 1,
-    title: "Dental Practice - Inbound",
     industry: "Healthcare",
-    duration: "",
-    description: "AI handling appointment scheduling and patient inquiries for a busy dental office.",
-    scenario: "Patient calling to schedule a cleaning appointment with specific time constraints"
+    title: "Dental Practice - Inbound",
+    description:
+      "AI handling appointment scheduling and patient inquiries for a busy dental office.",
+    scenario:
+      "Patient calling to schedule a cleaning appointment with specific time constraints",
+    audio: "/audios/sesame_call_Dental.mp3",
   },
   {
     id: 2,
-    title: "Roofing Company - Inbound", 
     industry: "Construction",
-    duration: "",
-    description: "Emergency roof repair call with detailed damage assessment and urgent scheduling.",
-    scenario: "Homeowner with storm damage requiring immediate inspection and repair estimate"
+    title: "Roofing Company - Inbound",
+    description:
+      "Emergency roof repair call with detailed damage assessment and urgent scheduling.",
+    scenario:
+      "Homeowner with storm damage requiring immediate inspection and repair estimate",
+    audio: "/audios/Inbound Roofing BANA.mp3",
   },
   {
     id: 3,
+    industry: "Healthcare",
     title: "Medical Practice - Outbound",
-    industry: "Healthcare", 
-    duration: "",
-    description: "AI conducting patient follow-ups and appointment confirmations for medical practice.",
-    scenario: "Following up with patients post-procedure and scheduling routine check-ups"
+    description:
+      "AI conducting patient follow-ups and appointment confirmations for medical practice.",
+    scenario:
+      "Following up with patients post-procedure and scheduling routine check-ups",
+    audio: "/audios/Doctor.mp3",
   },
   {
     id: 4,
-    title: "Legal Office - Outbound",
     industry: "Legal Services",
-    duration: "",
-    description: "AI reaching out to potential clients for consultation scheduling and case evaluation.",
-    scenario: "Following up with leads who inquired about personal injury representation"
+    title: "Legal Office - Outbound",
+    description:
+      "AI reaching out to potential clients for consultation scheduling and case evaluation.",
+    scenario:
+      "Following up with leads who inquired about personal injury representation",
+    audio: "/audios/Lawyer.mp3",
   },
   {
     id: 5,
-    title: "Roofing Company - Outbound",
     industry: "Construction",
-    duration: "",
-    description: "Proactive outreach for roof maintenance and inspection services to existing customers.",
-    scenario: "Seasonal maintenance reminders and upselling additional roofing services"
+    title: "Roofing Company - Outbound",
+    description:
+      "Proactive outreach for roof maintenance and inspection services to existing customers.",
+    scenario:
+      "Seasonal maintenance reminders and upselling additional roofing services",
+    audio: "/audios/sesame_call_Roofing.mp3",
   },
   {
     id: 6,
-    title: "Real Estate Investing - Outbound",
     industry: "Real Estate",
-    duration: "",
-    description: "AI contacting property owners for potential investment opportunities and acquisitions.",
-    scenario: "Reaching out to homeowners about cash offers for their properties"
-  }
+    title: "Real Estate Investing - Outbound",
+    description:
+      "AI contacting property owners for potential investment opportunities and acquisitions.",
+    scenario:
+      "Reaching out to homeowners about cash offers for their properties",
+    audio: "/audios/Realestate.mp3",
+  },
 ];
 
 const AudioDemos = () => {
@@ -70,43 +83,46 @@ const AudioDemos = () => {
 
   useEffect(() => {
     // Initialize audio elements
-    audioDemos.forEach(demo => {
+    audioDemos.forEach((demo) => {
       if (!audioRefs.current[demo.id]) {
         audioRefs.current[demo.id] = new Audio();
-        // In real implementation, you'd set the src to actual audio files
-        // audioRefs.current[demo.id].src = `/audio/demo-${demo.id}.mp3`;
-        
-        const audio = audioRefs.current[demo.id];
-        
-        audio.addEventListener('loadedmetadata', () => {
-          setDurations(prev => ({ ...prev, [demo.id]: audio.duration }));
-        });
-        
-        audio.addEventListener('timeupdate', () => {
-          setCurrentTimes(prev => ({ ...prev, [demo.id]: audio.currentTime }));
-        });
-        
-        audio.addEventListener('ended', () => {
-          setPlayingAudio(null);
-          setCurrentTimes(prev => ({ ...prev, [demo.id]: 0 }));
-        });
       }
+      // Always set the src to the correct audio file
+      audioRefs.current[demo.id].src = demo.audio;
+
+      const audio = audioRefs.current[demo.id];
+
+      audio.addEventListener("loadedmetadata", () => {
+        setDurations((prev) => ({ ...prev, [demo.id]: audio.duration }));
+      });
+
+      audio.addEventListener("timeupdate", () => {
+        setCurrentTimes((prev) => ({
+          ...prev,
+          [demo.id]: audio.currentTime,
+        }));
+      });
+
+      audio.addEventListener("ended", () => {
+        setPlayingAudio(null);
+        setCurrentTimes((prev) => ({ ...prev, [demo.id]: 0 }));
+      });
     });
 
     return () => {
       // Cleanup
-      Object.values(audioRefs.current).forEach(audio => {
+      Object.values(audioRefs.current).forEach((audio) => {
         audio.pause();
-        audio.removeEventListener('loadedmetadata', () => {});
-        audio.removeEventListener('timeupdate', () => {});
-        audio.removeEventListener('ended', () => {});
+        audio.removeEventListener("loadedmetadata", () => {});
+        audio.removeEventListener("timeupdate", () => {});
+        audio.removeEventListener("ended", () => {});
       });
     };
   }, []);
 
   const toggleAudio = (demoId: number) => {
     const currentAudio = audioRefs.current[demoId];
-    
+
     if (playingAudio && playingAudio !== demoId) {
       // Pause currently playing audio
       audioRefs.current[playingAudio].pause();
@@ -126,13 +142,13 @@ const AudioDemos = () => {
   const resetAudio = (demoId: number) => {
     const audio = audioRefs.current[demoId];
     audio.currentTime = 0;
-    setCurrentTimes(prev => ({ ...prev, [demoId]: 0 }));
+    setCurrentTimes((prev) => ({ ...prev, [demoId]: 0 }));
   };
 
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    return `${minutes}:${seconds.toString().padStart(2, "0")}`;
   };
 
   const getProgress = (demoId: number) => {
@@ -149,7 +165,8 @@ const AudioDemos = () => {
             Hear Your AI In Action
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real conversations from different industries showing how our AI handles complex customer interactions
+            Real conversations from different industries showing how our AI
+            handles complex customer interactions
           </p>
         </div>
 
@@ -158,9 +175,9 @@ const AudioDemos = () => {
             const isPlaying = playingAudio === demo.id;
             const currentTime = currentTimes[demo.id] || 0;
             const progress = getProgress(demo.id);
-            
+
             return (
-              <div 
+              <div
                 key={demo.id}
                 className="bg-gradient-card card-glow rounded-xl p-6 hover:shadow-elegant transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -172,14 +189,17 @@ const AudioDemos = () => {
                       <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
                         {demo.industry}
                       </span>
-                      
                     </div>
-                    <h3 className="font-semibold text-super-bright mb-2">{demo.title}</h3>
+                    <h3 className="font-semibold text-super-bright mb-2">
+                      {demo.title}
+                    </h3>
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-muted-foreground mb-2">{demo.description}</p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  {demo.description}
+                </p>
                 <p className="text-xs text-muted-foreground/80 italic mb-4">
                   Scenario: {demo.scenario}
                 </p>
@@ -193,7 +213,7 @@ const AudioDemos = () => {
                       <span>Ready to play</span>
                     </div>
                     <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div 
+                      <div
                         className="h-full bg-primary rounded-full transition-all duration-200"
                         style={{ width: `${progress}%` }}
                       ></div>
@@ -215,7 +235,7 @@ const AudioDemos = () => {
                           <Play className="w-4 h-4" />
                         )}
                       </Button>
-                      
+
                       <Button
                         variant="ghost"
                         size="icon"
@@ -231,7 +251,9 @@ const AudioDemos = () => {
                       {isPlaying && (
                         <>
                           <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                          <span className="text-xs text-primary font-medium">Playing</span>
+                          <span className="text-xs text-primary font-medium">
+                            Playing
+                          </span>
                         </>
                       )}
                       <Volume2 className="w-4 h-4 text-muted-foreground" />
