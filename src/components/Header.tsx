@@ -12,8 +12,8 @@ const Header = () => {
           {/* RevSquared AI Logo */}
           <div className="flex items-center space-x-3">
             {/* Actual RevSquared AI Logo */}
-            <img 
-              src="/lovable-uploads/48cca130-afa7-4e1a-93df-545e6f93cc23.png" 
+            <img
+              src="/lovable-uploads/48cca130-afa7-4e1a-93df-545e6f93cc23.png"
               alt="RevSquared AI Logo"
               className="w-12 h-12 object-contain"
             />
@@ -21,16 +21,28 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#process" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="#videos"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Our Process
             </a>
-            <a href="#success-stories" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="#success-stories"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Success Stories
             </a>
-            <a href="#demos" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="#demos"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               Live Demos
             </a>
-            <a href="#faq" className="text-foreground hover:text-primary transition-colors">
+            <a
+              href="#faq"
+              className="text-foreground hover:text-primary transition-colors"
+            >
               FAQ
             </a>
           </div>
@@ -40,7 +52,11 @@ const Header = () => {
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -48,29 +64,29 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="#process" 
+              <a
+                href="#videos"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Our Process
               </a>
-              <a 
-                href="#success-stories" 
+              <a
+                href="#success-stories"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Success Stories
               </a>
-              <a 
-                href="#demos" 
+              <a
+                href="#demos"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Live Demos
               </a>
-              <a 
-                href="#faq" 
+              <a
+                href="#faq"
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >

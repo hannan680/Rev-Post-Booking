@@ -26,13 +26,14 @@ const successStories: SuccessStory[] = [
     industry: "Business Lending",
     keyMetric: "Daily Contact Volume",
     metricValue: "20,000",
-    description: "Scaling lending operation that needed to handle massive lead volume without burning through overhead. AI processes 20K contacts daily while maintaining quality conversations and ethical standards.",
+    description:
+      "Scaling lending operation that needed to handle massive lead volume without burning through overhead. AI processes 20K contacts daily while maintaining quality conversations and ethical standards.",
     results: {
       leadIncrease: "300%",
       timesSaved: "40 hours/week",
-      revenueImpact: "Predictable Revenue"
+      revenueImpact: "Predictable Revenue",
     },
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
   },
   {
     id: "c4kr-real-estate",
@@ -41,13 +42,14 @@ const successStories: SuccessStory[] = [
     industry: "Real Estate Investment",
     keyMetric: "Close Rate",
     metricValue: "67%",
-    description: "Real estate investor who needed systematic deal flow instead of manual chaos. AI qualification and follow-up turned his operation into a predictable revenue machine.",
+    description:
+      "Real estate investor who needed systematic deal flow instead of manual chaos. AI qualification and follow-up turned his operation into a predictable revenue machine.",
     results: {
       leadIncrease: "347%",
       timesSaved: "42 hours/week",
-      revenueImpact: "$15K+ per deal"
+      revenueImpact: "$15K+ per deal",
     },
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
   },
   {
     id: "radiant-security",
@@ -56,13 +58,14 @@ const successStories: SuccessStory[] = [
     industry: "Home Security Systems",
     keyMetric: "Cost Reduction",
     metricValue: "80%",
-    description: "Complex security sales requiring technical expertise and ongoing support. Dual AI system handles both sales and customer service, cutting overhead while growing revenue.",
+    description:
+      "Complex security sales requiring technical expertise and ongoing support. Dual AI system handles both sales and customer service, cutting overhead while growing revenue.",
     results: {
       leadIncrease: "80%",
       timesSaved: "Dual AI Coverage",
-      revenueImpact: "Revenue Growth"
+      revenueImpact: "Revenue Growth",
     },
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
   },
   {
     id: "bana-roofing",
@@ -71,14 +74,15 @@ const successStories: SuccessStory[] = [
     industry: "Roofing and Solar",
     keyMetric: "Response Time",
     metricValue: "Instant",
-    description: "7-figure roofing company hitting capacity limits during storm season. AI command center handles unlimited call volume and scales the business into 8-figures.",
+    description:
+      "7-figure roofing company hitting capacity limits during storm season. AI command center handles unlimited call volume and scales the business into 8-figures.",
     results: {
       leadIncrease: "Instant Response",
       timesSaved: "Unlimited Capacity",
-      revenueImpact: "8-Figure Scaling"
+      revenueImpact: "8-Figure Scaling",
     },
-    image: "/api/placeholder/400/300"
-  }
+    image: "/api/placeholder/400/300",
+  },
 ];
 
 const SuccessStories = () => {
@@ -90,13 +94,14 @@ const SuccessStories = () => {
             From Scaling Walls to 8-Figure Growth
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            How 4 companies removed their biggest bottlenecks and transformed their operations. Here are the improved versions of your existing case studies:
+            How 4 companies removed their biggest bottlenecks and transformed
+            their operations.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {successStories.map((story, index) => (
-            <div 
+            <div
               key={story.id}
               className="group bg-gradient-card card-glow overflow-hidden hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in rounded-xl flex flex-col h-full"
               style={{ animationDelay: `${index * 0.2}s` }}
@@ -114,8 +119,12 @@ const SuccessStories = () => {
                     </span>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-success">{story.metricValue}</div>
-                    <div className="text-sm text-muted-foreground">{story.keyMetric}</div>
+                    <div className="text-2xl font-bold text-success">
+                      {story.metricValue}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {story.keyMetric}
+                    </div>
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
@@ -130,29 +139,37 @@ const SuccessStories = () => {
                     <div className="w-10 h-10 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-2">
                       <TrendingUp className="w-5 h-5 text-success" />
                     </div>
-                    <div className="text-lg font-bold text-success">+{story.results.leadIncrease}</div>
+                    <div className="text-lg font-bold text-success">
+                      +{story.results.leadIncrease}
+                    </div>
                     <div className="text-xs text-muted-foreground">Leads</div>
                   </div>
                   <div className="text-center">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
                       <Clock className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="text-lg font-bold text-primary">{story.results.timesSaved}</div>
-                    <div className="text-xs text-muted-foreground">Time Saved</div>
+                    <div className="text-lg font-bold text-primary">
+                      {story.results.timesSaved}
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      Time Saved
+                    </div>
                   </div>
                   <div className="text-center">
                     <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-2">
                       <DollarSign className="w-5 h-5 text-accent" />
                     </div>
-                    <div className="text-lg font-bold text-accent">{story.results.revenueImpact}</div>
+                    <div className="text-lg font-bold text-accent">
+                      {story.results.revenueImpact}
+                    </div>
                     <div className="text-xs text-muted-foreground">Revenue</div>
                   </div>
                 </div>
 
                 {/* CTA Button */}
                 <Link to={`/case-study/${story.id}`}>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                   >
                     Read Full Case Study

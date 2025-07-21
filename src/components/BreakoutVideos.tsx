@@ -44,8 +44,23 @@ const videos: Video[] = [
     description: "Understand the difference between owning and renting AI.",
     url: "https://youtu.be/_UG54qtBjWk",
   },
+  {
+    id: 7,
+    title: "AI Sales Manager",
+    description: "Close More Deals With The Help Of AI",
+    url: "https://www.youtube.com/embed/xs9KwmQxujI?si=_HWpAglzYnE6-qeF",
+  },
 ];
-const getYoutubeId = (url: string) => url.split("youtu.be/")[1];
+const getYoutubeId = (url: string) => {
+  // For embed URLs, extract the ID after '/embed/'
+  const embedMatch = url.match(/embed\/([\w-]{11})/);
+  if (embedMatch) return embedMatch[1];
+  // For standard YouTube URLs
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([\w-]{11})/
+  );
+  return match ? match[1] : "";
+};
 const BreakoutVideos = () => {
   const [playingId, setPlayingId] = useState<number | null>(null);
   return (
