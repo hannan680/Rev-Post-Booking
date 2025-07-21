@@ -47,12 +47,14 @@ const HeroSection = () => {
             our call
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-primary to-accent text-primary-foreground"
-            >
-              Download The AI Playbook
-            </Button>
+            <a href="/Rev2 Ebook.pdf" download="Rev2 Ebook.pdf">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-primary to-accent text-primary-foreground"
+              >
+                Download The AI Playbook
+              </Button>
+            </a>
           </div>
         </div>
 
