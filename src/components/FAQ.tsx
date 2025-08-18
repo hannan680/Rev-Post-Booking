@@ -23,12 +23,6 @@ const faqItems: FAQItem[] = [
     answer: "Chatbots follow scripts. Our AI is custom-trained on your business with 100+ pages of specific knowledge. It knows your pricing, processes, and can actually take actions like booking appointments and updating your CRM. It's like having your best employee available 24/7."
   },
   {
-    id: 3,
-    category: "pricing",
-    question: "What kind of investment are we talking about?",
-    answer: "Projects range from $3,500 to $20K depending on complexity and the size of the problem we're solving. Monthly support runs $497-$1,500 and includes all software costs plus premium support. Our average client sees over 800% ROI in the first year alone, with some seeing returns in the thousands. Most businesses break even within 30-60 days."
-  },
-  {
     id: 4,
     category: "general",
     question: "What problems signal I need this?",
